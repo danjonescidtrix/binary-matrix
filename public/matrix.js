@@ -1,4 +1,7 @@
 $(document).ready(function () {
+    
+    //fade body in
+    $("body").fadeIn(300);
 
     //creates binary items inside matrix container
     for (i = 0; i < 1500; i++) {
