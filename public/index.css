@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#binaryMatrix {
+    width: 100%;
+    height: 100%;
+}
+
+.binary {
+    float: left;
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1em!important;
+    font-style: italic!important;
+}
