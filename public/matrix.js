@@ -4,7 +4,7 @@ $(function () {
     $("body").fadeIn(300);
 
     //creates binary items inside matrix container
-    for (i = 0; i < 1500; i++) {
+    for (i = 0; i < 189; i++) {
         $('#binaryMatrix').append('<div id="' + i + '" class="binary">' + 0 + '</div>');
     }
 
