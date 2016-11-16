@@ -19,7 +19,7 @@ $(function () {
 
             switch (random) {
                 case "binary":
-                    item["0"].textContent = (item["0"].textContent == '0') ? '1' : '0';
+                    item["0"].innerText = (item["0"].innerText == '0') ? '1' : '0';
                     break;
                 case "bold":
                     item.css("font-weight", "bolder");
