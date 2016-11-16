@@ -13,9 +13,9 @@ $(function () {
 
         setInterval(function () {
 
-            var randomList = ['binary', 'bold', 'normal', 'black', 'blue', 'purple', 'gray']
-            var random = randomList[Math.floor(Math.random() * randomList.length)];
-            var item = $('#' + obj.id + '')
+            var randomList = ['binary', 'bold', 'normal', 'black', 'blue', 'purple', 'gray'],
+                random = randomList[Math.floor(Math.random() * randomList.length)],
+                item = $('#' + obj.id + '');
 
             switch (random) {
                 case "binary":
