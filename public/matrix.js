@@ -11,37 +11,38 @@ $(function () {
     //loops the binary items
     $("#binaryMatrix .binary").each(function (i, obj) {
 
-        var randomList = ['bold', 'normal', 'black', 'purple']
-        var random = randomList[Math.floor(Math.random() * randomList.length)];
-
         setInterval(function () {
-            $('#' + obj.id + '').text(function (i, t) {
-                return t == '1' ? '0' : '1';
-            });
-        }, Math.round(Math.random() * 10000) + 200);
 
-        switch (random) {
-            case "bold":
-                setInterval(function () {
+            var randomList = ['binary', 'bold', 'normal', 'black', 'blue', 'purple', 'gray']
+            var random = randomList[Math.floor(Math.random() * randomList.length)];
+
+            switch (random) {
+                case "binary":
+                    $('#' + obj.id + '').text(function (i, t) {
+                        return t == '1' ? '0' : '1';
+                    });
+                    break;
+                case "bold":
                     $('#' + obj.id + '').css("font-weight", "bolder");
-                }, Math.round(Math.random() * 5000) + 400);
-                break;
-            case "normal":
-                setInterval(function () {
+                    break;
+                case "normal":
                     $('#' + obj.id + '').css("font-weight", "normal");
-                }, Math.round(Math.random() * 5000) + 400)
-                break;
-            case "black":
-                setInterval(function () {
+                    break;
+                case "black":
                     $('#' + obj.id + '').css("color", "black");
-                }, Math.round(Math.random() * 5000) + 400);
-                break;
-            case "purple":
-                setInterval(function () {
+                    break;
+                case "purple":
                     $('#' + obj.id + '').css("color", "purple");
-                }, Math.round(Math.random() * 5000) + 400);
-                break;
-        }
+                    break;
+                case "blue":
+                    $('#' + obj.id + '').css("color", "#4F94CD");
+                    break
+                case "gray":
+                    $('#' + obj.id + '').css("color", "#575757");
+                    break
+            }
+
+        }, Math.round(Math.random() * 1000) + 200);
     });
 
 
