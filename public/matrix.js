@@ -4,6 +4,33 @@ $(function () {
 
     //fade body in
     $("body").fadeIn(300);
+    animatePalette()
+
+    //animates colour palette items
+    function animatePalette() {
+        $(".colour-pal--item").each(function (i, obj) {
+            $('#' + obj.id + '').animate({ top: '50px' }, 0);
+        });
+    
+        setTimeout(function () {
+            $("#colour-pal-1").animate({ top: '0px' }, 500, "swing");
+        }, 0);
+        setTimeout(function () {
+            $("#colour-pal-2").animate({ top: '0px' }, 500, "swing");
+        }, 100);
+        setTimeout(function () {
+            $("#colour-pal-3").animate({ top: '0px' }, 500, "swing");
+        }, 200);
+        setTimeout(function () {
+            $("#colour-pal-4").animate({ top: '0px' }, 500, "swing");
+        }, 300);
+        setTimeout(function () {
+            $("#colour-pal-5").animate({ top: '0px' }, 500, "swing");
+        }, 400);
+        setTimeout(function () {
+            $("#colour-pal-6").animate({ top: '0px' }, 500, "swing");
+        }, 500);
+    }
 
     //creates binary items inside matrix container
     for (i = 0; i < 189; i++) {
@@ -14,7 +41,6 @@ $(function () {
     $("#binaryMatrix .binary").each(function (i, obj) {
 
         setInterval(function () {
-
             var random = PALARRAY[Math.floor(Math.random() * PALARRAY.length)],
                 item = $('#' + obj.id + '');
 
