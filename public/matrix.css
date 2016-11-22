@@ -64,19 +64,19 @@ body {
 }
 
 .colour-pal--item{
-    border: solid #e6e6e6 5px;
+    border: solid #e6e6e6 2px;
     height: 30px;
     opacity: .4;
     transition: opacity .4s ease-out;
-    -moz-transition: opacity .4s ease-out;
-    -webkit-transition: opacity .4s ease-out;
-    -o-transition: opacity .4s ease-out;
+    -moz-transition: opacity .2s ease-out;
+    -webkit-transition: opacity .2s ease-out;
+    -o-transition: opacity .2s ease-out;
     cursor:pointer;
 }
 
-/*.colour-pal--item:hover{
+.colour-pal--item:hover{
     opacity: 1;
-}*/
+}
 
 .colour-pal--item__1{
     background-color: #4F94CD;
@@ -99,7 +99,7 @@ body {
 }
 
 .colour-pal--item__6{
-    background-color: yellow;
+    background-color: #e6e600;
 }
 
 footer {
