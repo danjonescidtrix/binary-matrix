@@ -15,7 +15,9 @@ $(function () {
         //animates palette
         var paletteWait = 500;
         setTimeout(function () {
-            $(".colour-pal").animate({ bottom: '35px' }, 750, "easeInOutQuart");
+            $(".colour-pal").animate({
+                bottom: '25px'
+            }, 750, "easeInOutBack");
         }, paletteWait);
 
         //sets colours positions
@@ -46,7 +48,7 @@ $(function () {
         //fades in palette text
         setTimeout(function () {
             $(".palette-text").fadeIn(1000);
-        }, paletteWait + 2000);
+        }, paletteWait + 1850);
     }
 
     //creates binary items inside matrix container
