@@ -8,27 +8,45 @@ $(function () {
 
     //animates colour palette items
     function animatePalette() {
+
+        //sets palette positions
+        $('.colour-pal').animate({ bottom: '-35px' }, 0);
+
+        //animates palette
+        var paletteWait = 500;
+        setTimeout(function () {
+            $(".colour-pal").animate({ bottom: '35px' }, 750, "easeInOutQuart");
+        }, paletteWait);
+
+        //sets colours positions
         $(".colour-pal--item").each(function (i, obj) {
             $('#' + obj.id + '').animate({ top: '50px' }, 0);
         });
+
+        //animates colours
         setTimeout(function () {
             $("#colour-pal-1").animate({ top: '0px' }, 750, "easeInOutQuart");
-        }, 0);
+        }, paletteWait + 200);
         setTimeout(function () {
             $("#colour-pal-2").animate({ top: '0px' }, 750, "easeInOutQuart");
-        }, 100);
+        }, paletteWait + 300);
         setTimeout(function () {
             $("#colour-pal-3").animate({ top: '0px' }, 750, "easeInOutQuart");
-        }, 200);
+        }, paletteWait + 400);
         setTimeout(function () {
             $("#colour-pal-4").animate({ top: '0px' }, 750, "easeInOutQuart");
-        }, 300);
+        }, paletteWait + 500);
         setTimeout(function () {
             $("#colour-pal-5").animate({ top: '0px' }, 750, "easeInOutQuart");
-        }, 400);
+        }, paletteWait + 600);
         setTimeout(function () {
             $("#colour-pal-6").animate({ top: '0px' }, 750, "easeInOutQuart");
-        }, 500);
+        }, paletteWait + 700);
+
+        //fades in palette text
+        setTimeout(function () {
+            $(".palette-text").fadeIn(1000);
+        }, paletteWait + 2000);
     }
 
     //creates binary items inside matrix container
