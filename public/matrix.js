@@ -1,6 +1,10 @@
 $(function () {
 
+    //========================= SET GLOBAL VARIABLES =========================
+
     var PALARRAY = ['binary', 'bold', 'normal', 'black', 'gray'];
+
+    //========================= PAGE LOAD / ANIMATIONS =========================
 
     //fade body in
     $("body").fadeIn(300);
@@ -50,6 +54,8 @@ $(function () {
             $(".palette-text").fadeIn(1000);
         }, paletteWait + 1850);
     }
+
+    //========================= BINARY MATRIX =========================
 
     //creates binary items inside matrix container
     for (i = 0; i < 189; i++) {
@@ -102,6 +108,7 @@ $(function () {
         }, Math.floor(Math.random() * (1000 - 200 + 1) + 200));
     });
 
+    //========================= COLOUR PALETTE =========================
 
     //adds colours to array
     $("#colour-pal .colour-pal--item").click(function () {
