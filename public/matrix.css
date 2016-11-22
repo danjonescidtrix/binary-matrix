@@ -56,9 +56,9 @@ body {
     height: 30px;
     opacity: .4;
     transition: opacity .4s ease-out;
-    -moz-transition: opacity .2s ease-out;
-    -webkit-transition: opacity .2s ease-out;
-    -o-transition: opacity .2s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -webkit-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
     cursor:pointer;
 }
 
