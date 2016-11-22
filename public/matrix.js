@@ -11,24 +11,23 @@ $(function () {
         $(".colour-pal--item").each(function (i, obj) {
             $('#' + obj.id + '').animate({ top: '50px' }, 0);
         });
-    
         setTimeout(function () {
-            $("#colour-pal-1").animate({ top: '0px' }, 500, "swing");
+            $("#colour-pal-1").animate({ top: '0px' }, 750, "easeInOutQuart");
         }, 0);
         setTimeout(function () {
-            $("#colour-pal-2").animate({ top: '0px' }, 500, "swing");
+            $("#colour-pal-2").animate({ top: '0px' }, 750, "easeInOutQuart");
         }, 100);
         setTimeout(function () {
-            $("#colour-pal-3").animate({ top: '0px' }, 500, "swing");
+            $("#colour-pal-3").animate({ top: '0px' }, 750, "easeInOutQuart");
         }, 200);
         setTimeout(function () {
-            $("#colour-pal-4").animate({ top: '0px' }, 500, "swing");
+            $("#colour-pal-4").animate({ top: '0px' }, 750, "easeInOutQuart");
         }, 300);
         setTimeout(function () {
-            $("#colour-pal-5").animate({ top: '0px' }, 500, "swing");
+            $("#colour-pal-5").animate({ top: '0px' }, 750, "easeInOutQuart");
         }, 400);
         setTimeout(function () {
-            $("#colour-pal-6").animate({ top: '0px' }, 500, "swing");
+            $("#colour-pal-6").animate({ top: '0px' }, 750, "easeInOutQuart");
         }, 500);
     }
 
