@@ -1,6 +1,6 @@
 $(function () {
 
-    PALARRAY = ['binary', 'bold', 'normal', 'black', 'gray'];
+    var PALARRAY = ['binary', 'bold', 'normal', 'black', 'gray'];
 
     //fade body in
     $("body").fadeIn(300);
@@ -63,28 +63,58 @@ $(function () {
         var palItem = $('#' + this.id + '');
         switch (this.id) {
             case "colour-pal-1":
-                PALARRAY.push("blue");
-                palItem.css("opacity", "1");
+                if (PALARRAY.includes("blue")) {
+                    PALARRAY.pop("blue");
+                    palItem.css("opacity", ".4");
+                } else {
+                    PALARRAY.push("blue");
+                    palItem.css("opacity", "1");
+                }
                 break
             case "colour-pal-2":
-                PALARRAY.push("purple");
-                palItem.css("opacity", "1");
+                if (PALARRAY.includes("purple")) {
+                    PALARRAY.pop("purple");
+                    palItem.css("opacity", ".4");
+                } else {
+                    PALARRAY.push("purple");
+                    palItem.css("opacity", "1");
+                }
                 break
             case "colour-pal-3":
-                PALARRAY.push("red");
-                palItem.css("opacity", "1");
+                if (PALARRAY.includes("red")) {
+                    PALARRAY.pop("red");
+                    palItem.css("opacity", ".4");
+                } else {
+                    PALARRAY.push("red");
+                    palItem.css("opacity", "1");
+                }
                 break
             case "colour-pal-4":
-                PALARRAY.push("green");
-                palItem.css("opacity", "1");
+                if (PALARRAY.includes("green")) {
+                    PALARRAY.pop("green");
+                    palItem.css("opacity", ".4");
+                } else {
+                    PALARRAY.push("green");
+                    palItem.css("opacity", "1");
+                }
                 break
             case "colour-pal-5":
-                PALARRAY.push("orange");
-                palItem.css("opacity", "1");
+                if (PALARRAY.includes("orange")) {
+                    PALARRAY.pop("orange");
+                    palItem.css("opacity", ".4");
+                } else {
+                    PALARRAY.push("orange");
+                    palItem.css("opacity", "1");
+                }
                 break
             case "colour-pal-6":
-                PALARRAY.push("yellow");
-                palItem.css("opacity", "1");
+                if (PALARRAY.includes("yellow")) {
+                    PALARRAY.pop("yellow");
+                    palItem.css("opacity", ".4");
+                } else {
+                    PALARRAY.push("yellow");
+                    palItem.css("opacity", "1");
+                }
                 break
         }
     });
