@@ -1,6 +1,6 @@
 $(function () {
 
-    //========================= SET GLOBAL VARIABLES =========================
+    //========================= GLOBAL VARIABLES =========================
 
     var PALARRAY = ['binary', 'bold', 'normal', 'black', 'gray'];
 
@@ -21,7 +21,7 @@ $(function () {
         setTimeout(function () {
             $(".colour-pal").animate({
                 bottom: '25px'
-            }, 750, "easeInOutBack");
+            }, 800, "easeInOutBack");
         }, paletteWait);
 
         //sets colours positions
@@ -31,23 +31,23 @@ $(function () {
 
         //animates colours
         setTimeout(function () {
-            $("#colour-pal-1").animate({ top: '0px' }, 750, "easeInOutQuart");
+            $("#colour-pal-1").animate({ top: '0px' }, 800, "easeInOutQuart");
         }, paletteWait + 200);
         setTimeout(function () {
-            $("#colour-pal-2").animate({ top: '0px' }, 750, "easeInOutQuart");
-        }, paletteWait + 300);
+            $("#colour-pal-2").animate({ top: '0px' }, 800, "easeInOutQuart");
+        }, paletteWait + 350);
         setTimeout(function () {
-            $("#colour-pal-3").animate({ top: '0px' }, 750, "easeInOutQuart");
-        }, paletteWait + 400);
-        setTimeout(function () {
-            $("#colour-pal-4").animate({ top: '0px' }, 750, "easeInOutQuart");
+            $("#colour-pal-3").animate({ top: '0px' }, 800, "easeInOutQuart");
         }, paletteWait + 500);
         setTimeout(function () {
-            $("#colour-pal-5").animate({ top: '0px' }, 750, "easeInOutQuart");
-        }, paletteWait + 600);
+            $("#colour-pal-4").animate({ top: '0px' }, 800, "easeInOutQuart");
+        }, paletteWait + 650);
         setTimeout(function () {
-            $("#colour-pal-6").animate({ top: '0px' }, 750, "easeInOutQuart");
-        }, paletteWait + 700);
+            $("#colour-pal-5").animate({ top: '0px' }, 800, "easeInOutQuart");
+        }, paletteWait + 800);
+        setTimeout(function () {
+            $("#colour-pal-6").animate({ top: '0px' }, 800, "easeInOutQuart");
+        }, paletteWait + 950);
 
         //fades in palette text
         setTimeout(function () {
