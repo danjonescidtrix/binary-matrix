@@ -33,26 +33,26 @@ body {
 .colour-pal {
     width: 300px;
     height: 30px;
-    position: absolute;
+    position: fixed;
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
     bottom: 35px;
     background-color: #e6e6e6;
-        border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
 
 .colour-pal-header{
     width: 250px;
     height:25px;
-    position: absolute;
+    position: fixed;
     left: 0; 
     right: 0; 
     margin-left: auto; 
     margin-right: auto; 
-    bottom: 30px;
+    bottom: 65px;
     background-color: #e6e6e6;
         border-top-left-radius: 4px;
     border-top-right-radius: 4px;
