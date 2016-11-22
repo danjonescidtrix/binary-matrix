@@ -54,7 +54,7 @@ body {
     margin-right: auto; 
     bottom: 65px;
     background-color: #e6e6e6;
-        border-top-left-radius: 4px;
+    border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 }
 
@@ -73,9 +73,10 @@ body {
     -o-transition: opacity .4s ease-out;
     cursor:pointer;
 }
-.colour-pal--item:hover{
+
+/*.colour-pal--item:hover{
     opacity: 1;
-}
+}*/
 
 .colour-pal--item__1{
     background-color: #4F94CD;

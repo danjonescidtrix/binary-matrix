@@ -51,7 +51,7 @@ $(function () {
                     break;
                 case "yellow":
                     item.css("color", "#e6e600");
-                    break
+                    break;
             }
 
         }, Math.floor(Math.random() * (1000 - 200 + 1) + 200));
@@ -70,7 +70,7 @@ $(function () {
                     PALARRAY.push("blue");
                     palItem.css("opacity", "1");
                 }
-                break
+                break;
             case "colour-pal-2":
                 if (PALARRAY.includes("purple")) {
                     PALARRAY.pop("purple");
@@ -79,7 +79,7 @@ $(function () {
                     PALARRAY.push("purple");
                     palItem.css("opacity", "1");
                 }
-                break
+                break;
             case "colour-pal-3":
                 if (PALARRAY.includes("red")) {
                     PALARRAY.pop("red");
@@ -88,7 +88,7 @@ $(function () {
                     PALARRAY.push("red");
                     palItem.css("opacity", "1");
                 }
-                break
+                break;
             case "colour-pal-4":
                 if (PALARRAY.includes("green")) {
                     PALARRAY.pop("green");
@@ -97,7 +97,7 @@ $(function () {
                     PALARRAY.push("green");
                     palItem.css("opacity", "1");
                 }
-                break
+                break;
             case "colour-pal-5":
                 if (PALARRAY.includes("orange")) {
                     PALARRAY.pop("orange");
@@ -106,7 +106,7 @@ $(function () {
                     PALARRAY.push("orange");
                     palItem.css("opacity", "1");
                 }
-                break
+                break;
             case "colour-pal-6":
                 if (PALARRAY.includes("yellow")) {
                     PALARRAY.pop("yellow");
@@ -115,7 +115,7 @@ $(function () {
                     PALARRAY.push("yellow");
                     palItem.css("opacity", "1");
                 }
-                break
+                break;
         }
     });
 
