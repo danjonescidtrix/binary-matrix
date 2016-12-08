@@ -1,2 +1,2 @@
 # binary-matrix
-An interchanging binary matrix created using purely Javascript
+An interchanging binary matrix + colour menu created using purely Javascript
